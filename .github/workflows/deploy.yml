@@ -24,7 +24,7 @@ jobs:
           context: .
           file: ./docker/Dockerfile.reactapp
           push: true
-          tags: beyondhuman6969/turbo-repo-ec2-deployment:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/turbo-repo-ec2-deployment:latest
 
       - name: Verify Pushed Image
-        run: docker pull beyondhuman6969/turbo-repo-ec2-deployment:latest 
+        run: docker pull ${{ secrets.DOCKER_USERNAME }}/turbo-repo-ec2-deployment:latest
