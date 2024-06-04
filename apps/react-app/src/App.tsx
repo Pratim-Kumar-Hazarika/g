@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Button appName="react-app">Hey From React-App</Button>
+      <Button appName="react-app">Hey From Workflows</Button>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
